@@ -31,13 +31,29 @@ function App() {
               {/* Quiz Component */}
               <Quiz />
               {/* Sign Out Button */}
-              <button 
-                onClick={signOut} 
-                style={{ 
-                  margin: '20px', 
-                  fontSize: '0.8rem', 
-                  padding: '5px 10px', 
-                  marginTop: '20px'
+              <button
+                onClick={signOut}
+                style={{
+                  marginTop: '24px',
+                  padding: '10px 18px',
+                  fontSize: '0.9rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.5px',
+                  color: '#f8fafc',
+                  background: 'linear-gradient(135deg, #ef4444, #dc2626)',
+                  border: 'none',
+                  borderRadius: '12px',
+                  cursor: 'pointer',
+                  boxShadow: '0 10px 20px rgba(239, 68, 68, 0.35)',
+                  transition: 'all 0.25s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px)';
+                  e.currentTarget.style.boxShadow = '0 15px 30px rgba(239, 68, 68, 0.5)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 10px 20px rgba(239, 68, 68, 0.35)';
                 }}
               >
                 Sign Out
